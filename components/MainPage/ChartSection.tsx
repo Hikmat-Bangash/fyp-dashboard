@@ -56,7 +56,7 @@ const ChartSection = () => {
           <h3 className="text-sm mt-4 text-center text-gray-700 font-semibold mb-5">
             Monthly basis complaints record
           </h3>
-          {/* <ComplaintStage /> */}
+          <ComplaintStage />
         </div>
       </div>
 
