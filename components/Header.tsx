@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { items } from "@/public/projectdata/asideData";
 import { useSelector } from "react-redux";
 import { FaUserCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { SignOutUser } from "@/app/GlobalState/UserSlice";
 import { RootState } from "@/app/GlobalState/store";
 import Image from "next/image";
-// import logo from "../public/wsscmlogo.png";
 
 // import {
 //   NovuProvider,
@@ -22,7 +20,6 @@ const Header = () => {
     (state: RootState) => state.User.SignInData
   );
   const activeTab = useSelector((state: RootState) => state.Tab.index);
-  const currentTab = items.find((x) => x.id === activeTab);
   const dispatch = useDispatch();
 
   // function onNotificationClick(message: IMessage) {

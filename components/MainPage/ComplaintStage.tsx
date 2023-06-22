@@ -4,9 +4,6 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 import { useSelector } from "react-redux";
 
-type Props = {
-  complaints: any;
-};
 
 const ApexChart = () => {
   const complaints: any = useSelector(
